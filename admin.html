@@ -1,0 +1,55 @@
+ <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Etalase</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Kelola Etalase Barang 💗</h1>
+
+  <form id="form">
+    <input type="text" id="title" placeholder="Nama Barang" required>
+    <input type="url" id="image" placeholder="Link Gambar" required>
+    <textarea id="desc" placeholder="Deskripsi Barang" required></textarea>
+    <input type="url" id="link" placeholder="Link Produk (Shopee/dll)" required>
+    <button type="submit">Tambah Barang</button>
+  </form>
+
+  <hr>
+
+  <div id="etalase"></div>
+
+  <script src="admin.js"></script>
+</body>
+</html>body {
+font-family: sans-serif;
+padding: 20px;
+background: #f4f4f4;
+max-width: 600px;
+margin: auto;
+}
+h1 {
+text-align: center;
+}
+form input, form textarea {
+width: 100%;
+margin-bottom: 10px;
+padding: 10px;
+}
+button {
+padding: 10px;
+margin-right: 5px;
+}
+.card {
+background: white;
+padding: 10px;
+margin-top: 10px;
+border-radius: 10px;
+box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+img {
+width: 100%;
+border-radius: 6px;
+}
